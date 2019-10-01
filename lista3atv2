@@ -1,0 +1,21 @@
+#include <stdio.h>
+ 
+int main()
+{
+  int l = 0;
+  char r[35], f[35];
+ 
+  printf("Digite qualquer coisa: ");
+  gets(r);
+ 
+  while (r[l] != '\0') {
+    f[l] = r[l];
+    l++;
+  }
+ 
+  f[l] = '\0';
+ 
+  printf("Você digitou: %s\n", f);
+ 
+  return 0;
+}
